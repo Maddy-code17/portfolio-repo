@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Portfolio - Maddy Rivera</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav id="navi">
+        <div class="navi_container">
+            <a class="logo">Maddy Rivera</a>
+            <ul class="navi_links" id="naviLinks">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile_menu_btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="me" id="me">
+        <div class="me_content">
+            <div class="my_photo"></div>
+            <h1>Hi, I am Maddy Rivera</h1>
+            <p>Engineering student curios and passionate to solve problems. Studying Electrical Engineering in Valencia College</p>
+            <div class="first_bttns">
+                <a href="#projects" class="btn btn_primary">My Projects</a>
+                <a href="#contact" class="btn btn_secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="arrow_down" onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'})">
+            <i class="fas fa-chevron-down fa-2x"></i>
+        </div>
+    </section>
+
+    <section id="skills" class="section_bg">
+        <div class="container">
+            <div class="section_title">
+                <h2>Skills and Expertise</h2>
+                <p>A comprehensive overview of my technical capabilities</p>
+            </div>
+            <div class="skills_grid" id="skills_grid">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="section_title">
+                <h2>Featured Projects</h2>
+                <p>Explore my work across different engineering disciplines</p>
+            </div>
+            <div class="project_filters">
+                <button class="filter_btn" data-filter="all">All Projects</button>
+                <button class="filter_btn" data-filter="software">Software</button>
+                <button class="filter_btn" data-filter="hardware">Hardware</button>
+                <button class="filter_btn" data-filter="robotics">Robotics</button>
+                <button class="filter_btn" data-filter="ai">AI & Vision</button>
+                <button class="filter_btn" data-filter="cad">CAD & Mechanical</button>
+            </div>
+            <div class="project_grid" id="projectsGrid">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section_bg">
+        <div class="container">
+            <div class="section_title">
+                <h2>Let's Connect</h2>
+                <p>I'm always open to discussing new projects, opportunities, or collaborations.</p>
+            </div>
+
+            <div class="contact_grid">
+                <a href="mailto:maddyr1771@gmail.com" class="contact_card">
+                    <div class="contact_icon" style="background: var(--gradient-3)">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact_info">
+                        <div class="contact_label">Email</div>
+                        <div class="contact_value">maddyr1771@gmail.com</div>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/maddy-rivera-58803a401/" target="_blank" class="contact_card">
+                    <div class="contact_icon" style="background-color: #0077b5">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="contact_info">
+                        <div class="contact_label">LinkedIn</div>
+                        <div class="contact_value">linkedin.com/in/maddy-rivera</div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Maddy-code17" target="_blank" class="contact_card">
+                    <div class="contact_icon" style="background: #333">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="contact_info">
+                        <div class="contact_label">GitHub</div>
+                        <div class="contact_value">github.com/Maddy-code17</div>
+                    </div>
+                </a>
+
+                <a href="files/Maddy Rivera Resume.pdf" download class="contact_card">
+                    <div class="contact_icon" style="background: var(--gradient-2)">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="contact_info">
+                        <div class="contact_label">Resume</div>
+                        <div class="contact_value">Download CV</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="status_card">
+                <h3>Currently Seeking Opportunities</h3>
+                <p>Open to internships, co-op positions, and research collaborations.</p>
+                <div class="status_tags">
+                    <span class="status_tag status_available">Available May 2026</span>
+                    <span class="status_tag status_remote">Remote OK</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Maddy Rivera. All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
